@@ -1,3 +1,27 @@
+
+## Table of Contents
+## Basics
+- [Introduction to Competitive Coding](#Introduction to Competitive Coding)
+
+## Task 0
+- [TODO](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Task-0)
+
+## Task 1
+- [STL in CPP and Java](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Standard-Template-Library---STL)
+- [Recursion](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Recursion)
+- [Time Complexities](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Time-Complexities)
+- [Fast IO for Competitive Programming](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Fast-IO-for-Competitive-Programming)
+
+## Task 2
+- [Basic Mathematics](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki)<br>
+<nbsp> - [Euclid's GCD and LCM](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/GCD-and-LCM)<br>
+<nbsp> - [Combinatrics](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Combinatrics)<br>
+- [Bit Manipulation](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Bit-Manipulation)
+- [Primality](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Primality)<br>
+<nbsp> - [Sieve of Eratosthenes](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Sieve-of-Eratosthenes)<br>
+
+### [Task 3](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Task-3)
+
 # Introduction to Competitive Coding
 
 Let us first talk about how one should approach a problem in Competitive Coding. There are broadly 4 steps -
@@ -12,15 +36,17 @@ Let us first talk about how one should approach a problem in Competitive Coding.
 
 A few tips for everyone - 
 
-Master your language. If you're doing it in C++, learn the **STL** well. Have the tools you need at your disposal. Learn the different space and time complexities for each data structure. Not knowing the underlying complexities often lead to wasting time on attempting the problem with unnecessary and costly implementations.
+Master your language. If you're doing it in C++, learn the **STL** well, same goes for Java and **Collections**. Have the tools you need at your disposal. Learn the different space and time complexities for each data structure. Not knowing the underlying complexities often lead to wasting time on attempting the problem with unnecessary and costly implementations.
 
 The key to improving yourself is practice. People chose different ways to do this. You can choose a standard platform and sort the problems by the number of people who have solved the problem. Keep solving. The most popular choices are Hackerrank and Codechef. If you can't solve a problem even after trying it out a lot, look at the editorials. Understand the solution, and then implement it on your own. Look at other people's submissions. Sometimes the red coders have very intriguing solutions to the simplest of problems.
+
+For your practice we are providing you with a few problems based on all the topics listed below. You can find them [here](https://www.hackerrank.com/contests/iecse-winterproject-2019/challenges/filters/page:1)
 
 Start attempting contests. Codechef long contests are really good for beginners. Since this contest runs for ten days, you'll have enough time to research and find the right algorithms for the problems. Once you're confident, you can start attempting short contests on platforms like codeforces, codechef, etc. The most important time of a contest is after the contest. This is when you try solving the problems that you couldn't solve during the contest. This is called up solving. This is a very efficient way of learning new tricks, optimizations, and concepts.
 
 Also check [this](https://www.codechef.com/certification/data-structures-and-algorithms/prepare) out.
 
-# STL in ```Java``` and ```C++```
+# STL in C++ and Collections in Java
 When you are taking part in a competition, creating functions/methods for certain tasks, like extracting substrings, sorting, adding and removing elemnts array, requires time to code and hence you lose out on valuable time. A good understanding of the library functions is important for writing quick and bug-free code. Most programming languages provide with predefined libraries which help you do the same. Here are a few you'll need to know to get started with competitive coding.
 
 >It is always suggested you understand how these are implemented without using STL, because if you ever face a problem where time is a constraint or requires a specific form of updation which STL do not have, you will have to code a program for it.
