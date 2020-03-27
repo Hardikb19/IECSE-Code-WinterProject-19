@@ -713,7 +713,7 @@ int lcm(int a,int b)
 }
 ```
 
-### 7.2. <a name='Timebig'></a>Combinatorics
+### 7.2. <a name='Combinatrics'></a>Combinatorics
 
 Combinatorics is the branch of mathematics that deals with combinations of elements belonging to a finite set in accordance with some constraints.
 
