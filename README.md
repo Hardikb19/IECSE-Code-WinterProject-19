@@ -1,7 +1,7 @@
 
 ## Table of Contents
 ## Basics
-- [Introduction to Competitive Coding](#Introduction to Competitive Coding)
+- [Introduction to Competitive Coding](#introduction)
 
 ## Task 0
 - [TODO](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Task-0)
@@ -22,7 +22,7 @@
 
 ### [Task 3](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Task-3)
 
-# Introduction to Competitive Coding
+# Introduction to Competitive Coding <a name="introduction"></a>
 
 Let us first talk about how one should approach a problem in Competitive Coding. There are broadly 4 steps -
  
