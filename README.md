@@ -20,7 +20,7 @@
 * 6. [Fast IO for Competitive Programming](#Fastio)
 * 7. [Basic Mathematics](#Basemaths)
         * 7.1 [GCD and LCM](#Gcdlcm)
-        * 7.2 [Combinatorics](#Combinatorics)
+        * 7.2 [Combinatorics](#Combinatrics)
         * 7.3 [Bit Manipulation](#Bitmanipulation)
         * 7.4 [Primality and Sieve of Eratosthenes](#Primality)
 * 8. [Modular Arithmetic](#Modarith)
