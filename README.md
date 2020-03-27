@@ -1,28 +1,23 @@
+<!-- vscode-markdown-toc -->
+* 1. [](#)
+* 2. [Strings](#Strings)
+* 3. [Inputting , Concatenating , Comparing Strings](#InputtingConcatenatingComparingStrings)
+* 4. [Vectors](#Vectors)
+* 5. [Sorting](#Sorting)
+* 6. [Min, Max](#MinMax)
+* 7. [Further Reading](#FurtherReading)
+	* 7.1. [Base case](#Basecase)
+	* 7.2. [Recursive call](#Recursivecall)
+	* 7.3. [Choosing base case and recursive call](#Choosingbasecaseandrecursivecall)
+* 8. [Example 1 : Fibonacci series](#Example1:Fibonacciseries)
+* 9. [Example 2 : Factorials](#Example2:Factorials)
 
-## Table of Contents
-## Basics
-- [Introduction to Competitive Coding](#introduction)
-
-## Task 0
-- [TODO](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Task-0)
-
-## Task 1
-- [STL in CPP and Java](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Standard-Template-Library---STL)
-- [Recursion](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Recursion)
-- [Time Complexities](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Time-Complexities)
-- [Fast IO for Competitive Programming](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Fast-IO-for-Competitive-Programming)
-
-## Task 2
-- [Basic Mathematics](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki)<br>
-<nbsp> - [Euclid's GCD and LCM](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/GCD-and-LCM)<br>
-<nbsp> - [Combinatrics](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Combinatrics)<br>
-- [Bit Manipulation](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Bit-Manipulation)
-- [Primality](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Primality)<br>
-<nbsp> - [Sieve of Eratosthenes](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Sieve-of-Eratosthenes)<br>
-
-### [Task 3](https://github.com/Hardikb19/IECSE-Code-WinterProject-19/wiki/Task-3)
-
-# Introduction to Competitive Coding <a name="introduction"></a>
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+# Introduction to Competitive Coding 
 
 Let us first talk about how one should approach a problem in Competitive Coding. There are broadly 4 steps -
  
@@ -52,7 +47,7 @@ When you are taking part in a competition, creating functions/methods for certai
 >It is always suggested you understand how these are implemented without using STL, because if you ever face a problem where time is a constraint or requires a specific form of updation which STL do not have, you will have to code a program for it.
 
 
-## Imports
+##  1. <a name=''></a>
 
 Imports for C++ STL
 ```cpp
@@ -64,7 +59,7 @@ import java.util.*;
 import java.io.*;        // Classes for Fast I/O implementation in Java
 ```
 
-## Strings
+##  2. <a name='Strings'></a>Strings
 
 If you have ever tried coding in C, you are probably used to declaring a string using an array of chars. C++ offers a string class that makes string handling easier.
 
@@ -99,7 +94,7 @@ public class Solution{
 }
 ```
 
-## Inputting , Concatenating , Comparing Strings
+##  3. <a name='InputtingConcatenatingComparingStrings'></a>Inputting , Concatenating , Comparing Strings
 A major advantage of using string class instead of character array is that you don't need to know the size of the string while declaring it.
 
 Concatenating strings is also easier with the string class. You can concatenate two strings using the '+' operator.
@@ -195,7 +190,7 @@ public class Solution{
     }
 }
 ```
-## Vectors
+##  4. <a name='Vectors'></a>Vectors
 
 A vector is a container i.e. something you can use to store many elements together. It is similar to an array but with added functionalities.
 
@@ -317,7 +312,7 @@ public class Solution{
 ```
 # Some Useful Functions
 
-## Sorting
+##  5. <a name='Sorting'></a>Sorting
 
 C++ provides the sort(pointer_to_first_ele , pointer_to_last_ele) function to sort arrays and vectors. The sort function is more efficient than sorting algorithms like bubble sort. It is also easier to use.
 
@@ -350,7 +345,7 @@ Java equivalent is using Arrays.sort() and Collections.sort()
        System.out.println(v.get(i));
 ```
 
-## Min, Max
+##  6. <a name='MinMax'></a>Min, Max
 
 The min and max functions can be used to find the minimum and maximum of multiple numbers without using many if else statements.
 
@@ -370,7 +365,7 @@ To use max(), min() directly you can use static imports
 import static java.lang.Math.*;
 ```
 
-## Further Reading
+##  7. <a name='FurtherReading'></a>Further Reading
 A great place to get started would be geeksforgeeks, links for which are provided below.
 * https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
 * https://www.geeksforgeeks.org/java-util-package-java/
@@ -404,15 +399,15 @@ This flow chart shows how a basic recursive function works
 
 ![Recursion.png](https://www.programtopia.net/sites/default/files/recursion.png)
 
-### Base case
+###  7.1. <a name='Basecase'></a>Base case
 The base case or the terminal case consists of the final step of the function which marks the end of the recursive function.
 
-### Recursive call
+###  7.2. <a name='Recursivecall'></a>Recursive call
 
 This step usually performs the calculations required and calls a smaller version of the main problem.
 This goes on until it reaches the base case.
 
-### Choosing base case and recursive call
+###  7.3. <a name='Choosingbasecaseandrecursivecall'></a>Choosing base case and recursive call
 
 The choice of the base case and recursive call for your function is really important as these decide how your function works
 
@@ -422,7 +417,7 @@ The base case of your function decides when your function ends, so your base cas
 
 # Examples
 So lets try out a couple of examples on how recursion works
-## Example 1 : Fibonacci series
+##  8. <a name='Example1:Fibonacciseries'></a>Example 1 : Fibonacci series
 
 The fibonacci series in mathamatics is represented by
 F(0) = 1
@@ -464,7 +459,7 @@ Here ``if(x == 0 || x == 1) `` is the base case and it returns when x = 0 or x =
 We can verify that the recursive call can never go below 1 or 0 as long as the initial input is valid because it is taken care of by the base case thus we never go past the base case.
 Also we see that with every call to the function x is getting smaller and thus closer to the base case of 0 or 1.
 
-## Example 2 : Factorials
+##  9. <a name='Example2:Factorials'></a>Example 2 : Factorials
 
 The factorial of a number n is equal to n\*(n-1)\*(n-2)...1
 ie,
