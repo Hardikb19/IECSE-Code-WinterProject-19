@@ -1,23 +1,25 @@
 <!-- vscode-markdown-toc -->
-* 1. [](#)
-* 2. [Strings](#Strings)
-* 3. [Inputting , Concatenating , Comparing Strings](#InputtingConcatenatingComparingStrings)
-* 4. [Vectors](#Vectors)
-* 5. [Sorting](#Sorting)
-* 6. [Min, Max](#MinMax)
-* 7. [Further Reading](#FurtherReading)
-	* 7.1. [Base case](#Basecase)
-	* 7.2. [Recursive call](#Recursivecall)
-	* 7.3. [Choosing base case and recursive call](#Choosingbasecaseandrecursivecall)
-* 8. [Example 1 : Fibonacci series](#Example1:Fibonacciseries)
-* 9. [Example 2 : Factorials](#Example2:Factorials)
+* 1. [Introduction to Competitive Coding](#IntroductiontoCompetitiveCoding)
+* 2. [STL in C++ and Collections in Java](#STLinCandCollectionsinJava)
+		* 2.1. [](#Imports)
+		* 2.2. [Strings](#Strings)
+		* 2.3. [Inputting , Concatenating , Comparing Strings](#InputtingConcatenatingComparingStrings)
+		* 2.4. [Vectors](#Vectors)
+* 3. [Some Useful Functions](#SomeUsefulFunctions)
+		* 3.1. [Sorting](#Sorting)
+		* 3.2. [Min, Max](#MinMax)
+		* 3.3. [Further Reading](#FurtherReading)
+* 4. [Recursion](#Recursion)
+* 5. [Examples](#Examples)
+		* 5.1. [Example 1 : Fibonacci series](#Example1:Fibonacciseries)
+		* 5.2. [Example 2 : Factorials](#Example2:Factorials)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
 	autoSave=true
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
-# Introduction to Competitive Coding 
+##  1. <a name='IntroductiontoCompetitiveCoding'></a>Introduction to Competitive Coding 
 
 Let us first talk about how one should approach a problem in Competitive Coding. There are broadly 4 steps -
  
@@ -41,17 +43,17 @@ Start attempting contests. Codechef long contests are really good for beginners.
 
 Also check [this](https://www.codechef.com/certification/data-structures-and-algorithms/prepare) out.
 
-# STL in C++ and Collections in Java
+##  2. <a name='STLinCandCollectionsinJava'></a>STL in C++ and Collections in Java
 When you are taking part in a competition, creating functions/methods for certain tasks, like extracting substrings, sorting, adding and removing elemnts array, requires time to code and hence you lose out on valuable time. A good understanding of the library functions is important for writing quick and bug-free code. Most programming languages provide with predefined libraries which help you do the same. Here are a few you'll need to know to get started with competitive coding.
 
 >It is always suggested you understand how these are implemented without using STL, because if you ever face a problem where time is a constraint or requires a specific form of updation which STL do not have, you will have to code a program for it.
 
 
-##  1. <a name=''></a>
+####  2.1. <a name='Imports'></a>Imports
 
 Imports for C++ STL
 ```cpp
-#include<bits/stdc++.h>
+##include<bits/stdc++.h>
 ```
 Imports for Java Utility Package
 ```Java
@@ -59,14 +61,14 @@ import java.util.*;
 import java.io.*;        // Classes for Fast I/O implementation in Java
 ```
 
-##  2. <a name='Strings'></a>Strings
+####  2.2. <a name='Strings'></a>Strings
 
 If you have ever tried coding in C, you are probably used to declaring a string using an array of chars. C++ offers a string class that makes string handling easier.
 
 The following code snippet shows how to declaring and use a string :
 
 ```cpp
-#include<bits/stdc++.h>
+##include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -94,14 +96,14 @@ public class Solution{
 }
 ```
 
-##  3. <a name='InputtingConcatenatingComparingStrings'></a>Inputting , Concatenating , Comparing Strings
+####  2.3. <a name='InputtingConcatenatingComparingStrings'></a>Inputting, Concatenating, Comparing Strings
 A major advantage of using string class instead of character array is that you don't need to know the size of the string while declaring it.
 
 Concatenating strings is also easier with the string class. You can concatenate two strings using the '+' operator.
 
 For comparing if two strings are equal , you can either use the relational operators('<' , '>' , '==' , "!="). Another way is using the compare function.
 ```cpp
-#include<bits/stdc++.h>
+##include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -190,7 +192,7 @@ public class Solution{
     }
 }
 ```
-##  4. <a name='Vectors'></a>Vectors
+####  2.4. <a name='Vectors'></a>Vectors
 
 A vector is a container i.e. something you can use to store many elements together. It is similar to an array but with added functionalities.
 
@@ -198,7 +200,7 @@ You don't need to know the size of a vector when declaring it. You can also get 
 
 
 ```cpp
-#include<bits/stdc++.h>
+##include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -240,7 +242,7 @@ The resize function can be sued to resize a vector one it is filled upto its cur
 The clear function clears the vector.
 
 ```cpp
-#include<bits/stdc++.h>
+##include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -310,9 +312,9 @@ public class Solution{
     }
 }
 ```
-# Some Useful Functions
+##  3. <a name='SomeUsefulFunctions'></a>Some Useful Functions
 
-##  5. <a name='Sorting'></a>Sorting
+####  3.1. <a name='Sorting'></a>Sorting
 
 C++ provides the sort(pointer_to_first_ele , pointer_to_last_ele) function to sort arrays and vectors. The sort function is more efficient than sorting algorithms like bubble sort. It is also easier to use.
 
@@ -345,7 +347,7 @@ Java equivalent is using Arrays.sort() and Collections.sort()
        System.out.println(v.get(i));
 ```
 
-##  6. <a name='MinMax'></a>Min, Max
+####  3.2. <a name='MinMax'></a>Min, Max
 
 The min and max functions can be used to find the minimum and maximum of multiple numbers without using many if else statements.
 
@@ -365,14 +367,14 @@ To use max(), min() directly you can use static imports
 import static java.lang.Math.*;
 ```
 
-##  7. <a name='FurtherReading'></a>Further Reading
+####  3.3. <a name='FurtherReading'></a>Further Reading
 A great place to get started would be geeksforgeeks, links for which are provided below.
 * https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
 * https://www.geeksforgeeks.org/java-util-package-java/
 * [Strings in C++](https://www.geeksforgeeks.org/strings-library-in-cpp-stl/) , [Strings in Java](https://www.geeksforgeeks.org/string-class-in-java/)
 
 
-# Recursion
+##  4. <a name='Recursion'></a>Recursion
 
 Imagine you have to build a robot which can perform a certain task, like add A to B, now you are told to use a unit from an infinite supply of units which can only add and subtract 1 to/from a number provided to it, and also perform logical operations. How will you build a system which adds A to B perfectly.
 
@@ -399,15 +401,15 @@ This flow chart shows how a basic recursive function works
 
 ![Recursion.png](https://www.programtopia.net/sites/default/files/recursion.png)
 
-###  7.1. <a name='Basecase'></a>Base case
+######  7.1. <a name='Basecase'></a>Base case
 The base case or the terminal case consists of the final step of the function which marks the end of the recursive function.
 
-###  7.2. <a name='Recursivecall'></a>Recursive call
+######  7.2. <a name='Recursivecall'></a>Recursive call
 
 This step usually performs the calculations required and calls a smaller version of the main problem.
 This goes on until it reaches the base case.
 
-###  7.3. <a name='Choosingbasecaseandrecursivecall'></a>Choosing base case and recursive call
+######  7.3. <a name='Choosingbasecaseandrecursivecall'></a>Choosing base case and recursive call
 
 The choice of the base case and recursive call for your function is really important as these decide how your function works
 
@@ -415,9 +417,9 @@ The recursive call of your function must be such that at each successive recursi
 
 The base case of your function decides when your function ends, so your base case should be selected such that your recursive case can never overshoot your base case.
 
-# Examples
+##  5. <a name='Examples'></a>Examples
 So lets try out a couple of examples on how recursion works
-##  8. <a name='Example1:Fibonacciseries'></a>Example 1 : Fibonacci series
+####  5.1. <a name='Example1:Fibonacciseries'></a>Example 1 : Fibonacci series
 
 The fibonacci series in mathamatics is represented by
 F(0) = 1
@@ -459,7 +461,7 @@ Here ``if(x == 0 || x == 1) `` is the base case and it returns when x = 0 or x =
 We can verify that the recursive call can never go below 1 or 0 as long as the initial input is valid because it is taken care of by the base case thus we never go past the base case.
 Also we see that with every call to the function x is getting smaller and thus closer to the base case of 0 or 1.
 
-##  9. <a name='Example2:Factorials'></a>Example 2 : Factorials
+####  5.2. <a name='Example2:Factorials'></a>Example 2 : Factorials
 
 The factorial of a number n is equal to n\*(n-1)\*(n-2)...1
 ie,
@@ -499,9 +501,9 @@ Again here ``if(x == 1)`` is the base case and returns when x is 1 and ``return 
 is the recursive call.
 Here too we see that x can never go below 1 as long as the initial input is above 1 and we also notice that with every successive recursive call x gets closer to 1.
 
-# Time Complexities
+## Time Complexities
 
-## Introduction
+#### Introduction
 
 Thinking of an efficient algorithm to solve a problem is one of the hardest tasks in competitive programming. Assessing your algorithm's efficiency is of upmost importance. This is where Time complexities are useful. They help us decide whether certain algorithms can solve the problem within the required time and space constraints. Time Complexity is one of the most important metrics of comparison for Algorithms.
 
@@ -509,7 +511,7 @@ For example consider two different sorting algorithms, bubble and quick sort. [B
 
 A lot of you must have faced an issue by now where your code passes some of the test cases, and some you get an error called TLE (Time Limit Exceeded). This is caused by non-efficient code. Every testcase comes with a time limit. Your code needs to produce an output for the given test case in that time limit for it to pass the case. If you encounter this error you need to make your code more efficient. Let us look at a sample code to understand complexities better.
 
-## A Sample:
+#### A Sample:
 
 ```cpp
 int func(int n)
@@ -563,7 +565,7 @@ The first for loop is executed n times. For each time the first for loop is exec
 
 Thus the total runtime can be written as a function of the array size squared, i.e. n<sup>2</sup>.
 
-## Big O notation
+#### Big O notation
 
 Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required by an algorithm.
 
@@ -571,7 +573,7 @@ We use the Big O notation for analyzing algorithms because it gives us an upper 
 
 Let us look at the most common complexities to understand Big O better.
 
-### O(1) or Constant Time
+###### O(1) or Constant Time
 
 This is when the algorithm runs in constant time, i.e doesn't depend on the size of the input.
 
@@ -582,7 +584,7 @@ int mid;
 mid = (start + end)/2;
 ```
 
-### O(n) or Linear Time
+###### O(n) or Linear Time
 
 This is when the runtime of the algorithm grows linearly with the size of the input. For example,
 
@@ -591,7 +593,7 @@ for(int i=0;i<n;i++)
     cout << i << endl;
 ```
 
-### Ο(N<sup>2</sup>) or Quadratic Time 
+###### Ο(N<sup>2</sup>) or Quadratic Time 
 
 This is when the runtime of the algorithm grows quadratically with respect to the size of the input. For example,
 
@@ -602,7 +604,7 @@ for(int i=0;i<n;i++)
         cout << i+j << endl;
 }
 ```
-### Ο(logN) or Logarithmic Time
+###### Ο(logN) or Logarithmic Time
 
 This is when the algorithm breaks down into two subproblems. For example, the binary search algorithm follows Ο(log N) complexity.
 
@@ -620,14 +622,14 @@ int binsearch(int arr[],int low,int high)
 
 The logarithm is base 2, i.e, log<sub>2</sub>N
 
-## Further Reading
+#### Further Reading
 1. Chapter 1,3 of Introduction to Algorithms, Second Edition, by Thomas Cormen, Charles Leiserson, Ronald Rivest, Clifford Stein.
 2. https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/
 3. https://www.cs.cmu.edu/~adamchik/15-121/lectures/Algorithmic%20Complexity/complexity.html
 4. https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/
 5. http://bigocheatsheet.com/ - contains complexities of standard sorting algorithms and standard data structures
 
-# Fast IO for Competitive Programming
+## Fast IO for Competitive Programming
 
 In competitive programming, it is important to read input as fast as possible so we save valuable time.
 
@@ -635,7 +637,7 @@ You must have seen various problem statements saying: “Warning: Large I/O data
 
 For such problems, the I/O data is extremely large and what we require is fast IO.
 
-### C++
+###### C++
 
 Most of you who use C++ would be using cin-cout for IO. However you might find it surprising to know that scanf and printf are actually faster than cin-cout. In fact, scanf is actually almost 5 times faster. You can check out some comparisons [here](https://www.geeksforgeeks.org/cincout-vs-scanfprintf/).
 
@@ -652,7 +654,7 @@ tie() is a method which simply guarantees the flushing of std::cout before std::
 
 Just add these two lines at the beginning of main() and you are good to go!
 
-### Java
+###### Java
 
 Most of you who use Java would be using the Scanner class for IO. It is easy to implement and requires a lot less typing, however it is also very slow. This is because scanner invloves parsing of tokens. What this means is that Scanner breaks what you parse into tokens, the criteria being whitespaces, tabs, new lines, etc.
 
@@ -662,15 +664,15 @@ There are a few workarounds, check them out:
 
 We would recommend you make a practice of using Fast IO methods. Sometimes it can happen that no warning is provided and you would be left wondering why your code is not working.
 
-# Basic Mathematics for Competitive Programming
+## Basic Mathematics for Competitive Programming
 
-# Greatest Common Divisor and Least Common Multiple
+## Greatest Common Divisor and Least Common Multiple
 
 The GCD (Greatest Common Divisor) of two numbers is defined as the largest integers that divide both the numbers. For example, 2 is the GCD of 4 and 6. From this concept, follows something called co-primes. Two numbers are said to be co-prime if their GCD is 1. For example, 3 and 5 are co-primes because their GCD is 1. 
 
 LCM (Least Common Multiple) is defined as the smallest integer that is divisible by both the numbers. For example, 10 is the LCM of 2 and 5. 
 
-## Euclid's algorithm
+#### Euclid's algorithm
 
 This is one of the most famous algorithms for computing gcd of two numbers. 
 Consider two numbers a and b. The procedure of Euclid's algorithm can be broken down into a sequence of equations,
@@ -703,32 +705,32 @@ int lcm(int a,int b)
 }
 ```
 
-# Combinatorics
+## Combinatorics
 
 Combinatorics is the branch of mathematics that deals with combinations of elements belonging to a finite set in accordance with some constraints.
 
-#### Principle of Addition
+######## Principle of Addition
 
 The principle of addition states if a one task can be one done in *m* ways and another task which is **mutually exclusive** of the first task can be done in *n* ways, then the the number of possible ways in which either can be done is *m+n*.
 
-#### Principle of Multiplication
+######## Principle of Multiplication
 
 The principle of multiplication states that if one task can be done in *m* ways and another task which is **independent** of the first task can be done in *n* ways, after the first task has been performed, then the number of possible ways in which both the tasks can be done is *m×n*.
 
-#### Combinations of Objects
+######## Combinations of Objects
 
 Number of ways in which you can select *n* objects taken *r* at a time. (Order does not matter.)
 
 <sup>*n*</sup>*C*<sub>*r*</sub> *= n! / r! (n - r)!*
 
-#### Permutations of Objects
+######## Permutations of Objects
 
 Number of ways you can order *n* objects taken *r* at a time. (Order matters.)
 
 <sup>*n*</sup>*P*<sub>*r*</sub> *= n! / (n - r)!*
 
 
-#### Stars and Bars
+######## Stars and Bars
 
 **Theorem one**
 
@@ -754,11 +756,11 @@ Here the 4 kids get 3, 0, 2 and 2 cookies respectively. So there are 10 symbols 
 
 This can be generalised as <sup>*(n+k-1)*</sup>*C*<sub>*(k-1)*</sub>.
 
-#### Properties of Combinations
+######## Properties of Combinations
 
 ![Combinations Properties](https://www.studypage.in/images/maths/algebra/combination-properties.jpg)
 
-# Bit Manipulation
+## Bit Manipulation
 
 Working on bytes, or data types comprising of bytes like ints, floats, doubles or even data structures which stores a large number of bytes is normal for a programmer. In some cases, a programmer needs to go beyond this - that is to say that in a deeper level where the importance of bits is realized.
 
@@ -779,7 +781,7 @@ Example:
 
 For characters, we use ASCII representation, which is in the form of integers which again can be represented using bits as explained above.
 
-## Bitwise Operators
+#### Bitwise Operators
 
 There are different bitwise operations used in the bit manipulation. These bit operations operate on the individual bits of the bit patterns. Bit operations are fast and can be used in optimizing time complexity. Some common bit operators are:
 
@@ -822,7 +824,7 @@ A ^ B = (101)<sub>2</sub> ^ (011)<sub>2</sub> = (110)<sub>2</sub> = 6
 
 > Bitwise operators are good for saving space and sometimes to cleverly remove dependencies.
 
-### **How to check if a given number is a power of 2 ?**
+###### **How to check if a given number is a power of 2 ?**
 
 Consider a number N and you need to find if N is a power of 2. A simple solution to this problem is to repeated divide N by 2 if N is even. If we end up with a 1 then N is a power of 2, otherwise not. There is a special case also. If N = 0 then it is not a power of 2.
 ```cpp
@@ -868,7 +870,7 @@ Properties for numbers which are powers of 2, is that they have one and only one
     }
 ```
 
-### **Count the number of ones in the binary representation of the given number**
+###### **Count the number of ones in the binary representation of the given number**
 
 The basic approach to evaluate the binary form of a number is to traverse on it and count the number of ones. But this approach takes log2N of time in every case.
 
@@ -901,7 +903,7 @@ n = 23 = {10111}<sub>2</sub> .
 
 Complexity: O(K), where K is the number of one's present in the binary form of the given number.
 
-### **Check if the ith bit is set in the binary form of the given number**
+###### **Check if the ith bit is set in the binary form of the given number**
 
 To check if the i<sup>th</sup> bit is set or not (1 or not), we can use AND operator. How?
 
@@ -922,7 +924,7 @@ Example:
 Let’s say N = 20 = {10100}<sub>2</sub>.<br> Now let’s check if it’s 2nd bit is set or not(starting from 0).<br> For that, we have to AND it with 22 = 1 << 2 = {100}<sub>2</sub>.<br><br>
 {10100}<sub>2</sub> & {100}<sub>2</sub> = {100}<sub>2</sub> = 22 = 4(non-zero number), which means it’s 2nd bit is set.
 
-### **How to generate all the possible subsets of a set?**
+###### **How to generate all the possible subsets of a set?**
 
 A big advantage of bit manipulation is that it can help to iterate over all the subsets of an N-element set. As we all know there are **2N** possible subsets of any given set with N elements. What if we represent each element in a subset with a bit. A bit can be either 0 or 1, thus we can use this to denote whether the corresponding element belongs to this given subset or not. So each bit pattern will represent a subset.
 
@@ -964,9 +966,9 @@ void possibleSubsets(char A[], int N)
 }
 ```
 
-## **Tricks with Bits:**
+#### **Tricks with Bits:**
 
-### x ^ ( x & (x-1))
+###### x ^ ( x & (x-1))
 Returns the rightmost 1 in binary representation of x.
 
 As explained above, (x & (x - 1)) will have all the bits equal to the x except for the rightmost 1 in x. So if we do bitwise XOR of x and (x & (x-1)), it will simply return the rightmost 1. Let’s see an example.
@@ -975,7 +977,7 @@ x = 10 = (1010)<sub>2</sub><br>
 x & (x-1) = (1010)<sub>2</sub> & (1001)<sub>2</sub> = (1000)<sub>2</sub><br>
 x ^ (x & (x-1)) = (1010)<sub>2</sub> ^ (1000)<sub>2</sub> = (0010)<sub>2</sub><br>
 
-### x & (-x)
+###### x & (-x)
 
 Returns the rightmost 1 in binary representation of x
 
@@ -986,7 +988,7 @@ x = 10 = (1010)<sub>2</sub>
 (-x) = -10 = (0110)<sub>2</sub>
 x & (-x) = (1010)<sub>2</sub> & (0110)<sub>2</sub> = (0010)<sub>2</sub>
 
-### x | (1 << n) 
+###### x | (1 << n) 
 
 Returns the number x with the nth bit set.
 
@@ -996,18 +998,18 @@ n = 2<br>
 1 << n = (0100)<sub>2</sub><br>
 x | (1 << n) = (1010)<sub>2</sub> | (0100)<sub>2</sub> = (1110)<sub>2</sub><br>
 
-## Applications of bit operations
+#### Applications of bit operations
 
 1) They are widely used in areas of graphics, especially **XOR(Exclusive OR)** operations.
 2) They are widely used in the embedded systems, in situations, where we need to set/clear/toggle just one single bit of a specific register without modifying the other contents. We can do OR/AND/XOR operations with the appropriate mask for the bit position.
 3) Data structure like n-bit map can be used to allocate n-size resource pool to represent the current status.
 4) Bits are used in networking, framing the packets of numerous bits which is sent to another system generally through any type of serial interface.
 
-## Links
+#### Links
 
 1) Creative use of Bitwise operators - [Link Here!](https://snook.ca/archives/javascript/creative-use-bitwise-operators)
 
-# Primality and Sieve of Eratosthenes
+## Primality and Sieve of Eratosthenes
 
 This is one of the most important concepts that you'll encounter in the world of competitive programming. 
 
@@ -1074,7 +1076,7 @@ bool isPrime(int x)
 Notice that in this implementation, we hit only half the number of proper divisors.  
 There are many more algorithms for primality test like Fermat's little theorem, Miller-Rabin test, Solovay-Strassen. But we will not look into these just yet.
 
-## The Sieve
+#### The Sieve
 
 In mathematics, the **Sieve of Eratosthenes** is a very simple algorithm of finding all prime numbers up to a given limit.
 
@@ -1127,7 +1129,7 @@ void sieve(int n)
 }
 ```
 
-# Modular Arithmetic
+## Modular Arithmetic
 
 Modular Arithmetic is another important concept in the field of computer
 science. For example, we use modular arithmetic to manage the problem of
@@ -1197,7 +1199,7 @@ Some properties to note :
     , you may find the derivation
     [here](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/fast-modular-exponentiation).
 
-# Modular Inverse
+## Modular Inverse
 
 What is a modular inverse?
 
@@ -1211,7 +1213,7 @@ modular inverses.
 
 How to find the modular inverse?
 
-### A naive method of finding a modular inverse for A (mod C) is:
+###### A naive method of finding a modular inverse for A (mod C) is:
 
 step 1. Calculate A \* B mod C for B values 0 through C-1
 
@@ -1224,7 +1226,7 @@ testing larger values for B is redundant.
 Check out the implementation
 [here](https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/)
 
-### A better method would be to use Fermat's little theorem
+###### A better method would be to use Fermat's little theorem
 
 Fermat’s little theorem states that if p is a prime number, then for any integer
 a, the number a^p – a is an integer multiple of p.
@@ -1240,7 +1242,7 @@ a^(-1) ≡ a^(m-2) (mod m)
 Check out the implementation
 [here](https://www.geeksforgeeks.org/fermats-little-theorem/)
 
-# Ad Hoc Problems
+## Ad Hoc Problems
 
 Competitive programming problems are generally divided into a number categories,
 each requiring a different skill set, algorithm, or data structure to solve. One
@@ -1261,7 +1263,7 @@ independently. If you find yourself stuck on a problem for longer than several
 hours, it may be helpful to consult the solution in order to thoroughly
 understand the general approach and then code it.
 
-# Kadane's algorithm and prefix sum
+## Kadane's algorithm and prefix sum
 
 A really common problem encountered in competitive programming can be solved
 using the concept of
@@ -1288,7 +1290,7 @@ in a given array.
 You can check out the code
 [here](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)
 
-# Further Reading
+## Further Reading
 
 That brings to the conclusion of this tutorial. We hope you were able to learn all the topics. There is a lot more to be discovered. We are providing you with some links for further reading. And remember, practice is the most important part of Competitive Programming.
 
