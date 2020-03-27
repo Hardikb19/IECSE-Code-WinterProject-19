@@ -1,31 +1,33 @@
 <!-- vscode-markdown-toc -->
-* 1. [Introduction to Competitive Coding](#IntroductiontoCompetitiveCoding)
-* 2. [STL in C++ and Collections in Java](#STLinCandCollectionsinJava)
+
+## Table of Contents
+
+1. [Introduction to Competitive Coding](#IntroductiontoCompetitiveCoding)
+2. [STL in C++ and Collections in Java](#STLinCandCollectionsinJava)
 		* 2.1. [Imports](#Imports)
 		* 2.2. [Strings](#Strings)
 		* 2.3. [Inputting, Concatenating, Comparing Strings](#InputtingConcatenatingComparingStrings)
 		* 2.4. [Vectors](#Vectors)
-* 3. [Some Useful Functions](#SomeUsefulFunctions)
+3. [Some Useful Functions](#SomeUsefulFunctions)
 		* 3.1. [Sorting](#Sorting)
 		* 3.2. [Min, Max](#MinMax)
 		* 3.3. [Further Reading](#FurtherReading)
-* 4. [Recursion](#Recursion)
+4. [Recursion](#Recursion)
 	* 4.1. [ Examples](#Examples)
 		* 4.1.1. [ Example 1: Fibonacci series](#Example1:Fibonacciseries)
 		* 4.1.2. [ Example 2: Factorials](#Example2:Factorials)
-* 5. [Time Complexities](#Time)
-        * 5.1 [Introduction](#Timeintro)
-        * 5.2 [Big O notation](#Timebig)
-        * 5.3 [Further Reading](#Timefurther)
-* 6. [Fast IO for Competitive Programming](#Fastio)
-* 7. [Basic Mathematics](#Basemaths)
+5. [Time Complexities](#Time)
+        * 5.1 [Big O notation](#Timebig)
+        * 5.2 [Further Reading](#Timefurther)
+6. [Fast IO for Competitive Programming](#Fastio)
+7. [Basic Mathematics](#Basemaths)
         * 7.1 [GCD and LCM](#Gcdlcm)
         * 7.2 [Combinatorics](#Combinatorics)
         * 7.3 [Bit Manipulation](#Bitmanipulation)
         * 7.4 [Primality and Sieve of Eratosthenes](#Primality)
-* 8. [Modular Arithmetic](#Modarith)
-* 9. [Ad Hoc](#Adhoc)
-* 10. [Kadane's Algorithm and Prefix Sum](#Kadane)
+8. [Modular Arithmetic](#Modarith)
+9. [Ad Hoc](#Adhoc)
+10. [Kadane's Algorithm and Prefix Sum](#Kadane)
 
 ##  1. <a name='IntroductiontoCompetitiveCoding'></a>Introduction to Competitive Coding 
 
@@ -509,7 +511,7 @@ Again here ``if(x == 1)`` is the base case and returns when x is 1 and ``return 
 is the recursive call.
 Here too we see that x can never go below 1 as long as the initial input is above 1 and we also notice that with every successive recursive call x gets closer to 1.
 
-## Time Complexities
+## 5. <a name='Time'></a>Time Complexities
 
 #### Introduction
 
@@ -573,7 +575,7 @@ The first for loop is executed n times. For each time the first for loop is exec
 
 Thus the total runtime can be written as a function of the array size squared, i.e. n<sup>2</sup>.
 
-#### Big O notation
+### 5.1 <a name='Timebig'></a>Big O notation
 
 Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required by an algorithm.
 
@@ -581,7 +583,7 @@ We use the Big O notation for analyzing algorithms because it gives us an upper 
 
 Let us look at the most common complexities to understand Big O better.
 
-###### O(1) or Constant Time
+##### O(1) or Constant Time
 
 This is when the algorithm runs in constant time, i.e doesn't depend on the size of the input.
 
@@ -592,7 +594,7 @@ int mid;
 mid = (start + end)/2;
 ```
 
-###### O(n) or Linear Time
+##### O(n) or Linear Time
 
 This is when the runtime of the algorithm grows linearly with the size of the input. For example,
 
@@ -601,7 +603,7 @@ for(int i=0;i<n;i++)
     cout << i << endl;
 ```
 
-###### Ο(N<sup>2</sup>) or Quadratic Time 
+##### Ο(N<sup>2</sup>) or Quadratic Time 
 
 This is when the runtime of the algorithm grows quadratically with respect to the size of the input. For example,
 
@@ -612,7 +614,7 @@ for(int i=0;i<n;i++)
         cout << i+j << endl;
 }
 ```
-###### Ο(logN) or Logarithmic Time
+##### Ο(logN) or Logarithmic Time
 
 This is when the algorithm breaks down into two subproblems. For example, the binary search algorithm follows Ο(log N) complexity.
 
@@ -630,14 +632,14 @@ int binsearch(int arr[],int low,int high)
 
 The logarithm is base 2, i.e, log<sub>2</sub>N
 
-#### Further Reading
+### 5.2 <a name='Timefurther'></a>Further Reading
 1. Chapter 1,3 of Introduction to Algorithms, Second Edition, by Thomas Cormen, Charles Leiserson, Ronald Rivest, Clifford Stein.
 2. https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/
 3. https://www.cs.cmu.edu/~adamchik/15-121/lectures/Algorithmic%20Complexity/complexity.html
 4. https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/
 5. http://bigocheatsheet.com/ - contains complexities of standard sorting algorithms and standard data structures
 
-## Fast IO for Competitive Programming
+## 6. <a name='Fastio'></a>Fast IO for Competitive Programming
 
 In competitive programming, it is important to read input as fast as possible so we save valuable time.
 
@@ -672,9 +674,9 @@ There are a few workarounds, check them out:
 
 We would recommend you make a practice of using Fast IO methods. Sometimes it can happen that no warning is provided and you would be left wondering why your code is not working.
 
-## Basic Mathematics for Competitive Programming
+## 7. <a name='Basemaths'></a>Basic Mathematics for Competitive Programming
 
-## Greatest Common Divisor and Least Common Multiple
+### 7.1. <a name='Gcdlcm'></a>Greatest Common Divisor and Least Common Multiple
 
 The GCD (Greatest Common Divisor) of two numbers is defined as the largest integers that divide both the numbers. For example, 2 is the GCD of 4 and 6. From this concept, follows something called co-primes. Two numbers are said to be co-prime if their GCD is 1. For example, 3 and 5 are co-primes because their GCD is 1. 
 
@@ -713,7 +715,7 @@ int lcm(int a,int b)
 }
 ```
 
-## Combinatorics
+### 7.2. <a name='Timebig'></a>Combinatorics
 
 Combinatorics is the branch of mathematics that deals with combinations of elements belonging to a finite set in accordance with some constraints.
 
@@ -768,7 +770,7 @@ This can be generalised as <sup>*(n+k-1)*</sup>*C*<sub>*(k-1)*</sub>.
 
 ![Combinations Properties](https://www.studypage.in/images/maths/algebra/combination-properties.jpg)
 
-## Bit Manipulation
+### 7.3. <a name='Bitmanipulation'></a>Bit Manipulation
 
 Working on bytes, or data types comprising of bytes like ints, floats, doubles or even data structures which stores a large number of bytes is normal for a programmer. In some cases, a programmer needs to go beyond this - that is to say that in a deeper level where the importance of bits is realized.
 
@@ -1017,7 +1019,7 @@ x | (1 << n) = (1010)<sub>2</sub> | (0100)<sub>2</sub> = (1110)<sub>2</sub><br>
 
 1) Creative use of Bitwise operators - [Link Here!](https://snook.ca/archives/javascript/creative-use-bitwise-operators)
 
-## Primality and Sieve of Eratosthenes
+### 7.4. <a name='Primality'></a>Primality and Sieve of Eratosthenes
 
 This is one of the most important concepts that you'll encounter in the world of competitive programming. 
 
@@ -1137,7 +1139,7 @@ void sieve(int n)
 }
 ```
 
-## Modular Arithmetic
+## 8. <a name='Modarith'></a>Modular Arithmetic
 
 Modular Arithmetic is another important concept in the field of computer
 science. For example, we use modular arithmetic to manage the problem of
@@ -1207,7 +1209,7 @@ Some properties to note :
     , you may find the derivation
     [here](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/fast-modular-exponentiation).
 
-## Modular Inverse
+### Modular Inverse
 
 What is a modular inverse?
 
@@ -1250,7 +1252,7 @@ a^(-1) ≡ a^(m-2) (mod m)
 Check out the implementation
 [here](https://www.geeksforgeeks.org/fermats-little-theorem/)
 
-## Ad Hoc Problems
+## 9. <a name='Adhoc'></a>Ad Hoc Problems
 
 Competitive programming problems are generally divided into a number categories,
 each requiring a different skill set, algorithm, or data structure to solve. One
@@ -1271,7 +1273,7 @@ independently. If you find yourself stuck on a problem for longer than several
 hours, it may be helpful to consult the solution in order to thoroughly
 understand the general approach and then code it.
 
-## Kadane's algorithm and prefix sum
+## 10. <a name='Kadane'></a>Kadane's algorithm and prefix sum
 
 A really common problem encountered in competitive programming can be solved
 using the concept of
