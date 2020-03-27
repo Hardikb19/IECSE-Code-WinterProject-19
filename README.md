@@ -1,24 +1,32 @@
 <!-- vscode-markdown-toc -->
 * 1. [Introduction to Competitive Coding](#IntroductiontoCompetitiveCoding)
 * 2. [STL in C++ and Collections in Java](#STLinCandCollectionsinJava)
-		* 2.1. [](#Imports)
+		* 2.1. [Imports](#Imports)
 		* 2.2. [Strings](#Strings)
-		* 2.3. [Inputting , Concatenating , Comparing Strings](#InputtingConcatenatingComparingStrings)
+		* 2.3. [Inputting, Concatenating, Comparing Strings](#InputtingConcatenatingComparingStrings)
 		* 2.4. [Vectors](#Vectors)
 * 3. [Some Useful Functions](#SomeUsefulFunctions)
 		* 3.1. [Sorting](#Sorting)
 		* 3.2. [Min, Max](#MinMax)
 		* 3.3. [Further Reading](#FurtherReading)
 * 4. [Recursion](#Recursion)
-* 5. [Examples](#Examples)
-		* 5.1. [Example 1 : Fibonacci series](#Example1:Fibonacciseries)
-		* 5.2. [Example 2 : Factorials](#Example2:Factorials)
+	* 4.1. [ Examples](#Examples)
+		* 4.1.1. [ Example 1: Fibonacci series](#Example1:Fibonacciseries)
+		* 4.1.2. [ Example 2: Factorials](#Example2:Factorials)
+* 5. [Time Complexities](#Time)
+        * 5.1 [Introduction](#Timeintro)
+        * 5.2 [Big O notation](#Timebig)
+        * 5.3 [Further Reading](#Timefurther)
+* 6. [Fast IO for Competitive Programming](#Fastio)
+* 7. [Basic Mathematics](#Basemaths)
+        * 7.1 [GCD and LCM](#Gcdlcm)
+        * 7.2 [Combinatorics](#Combinatorics)
+        * 7.3 [Bit Manipulation](#Bitmanipulation)
+        * 7.4 [Primality and Sieve of Eratosthenes](#Primality)
+* 8. [Modular Arithmetic](#Modarith)
+* 9. [Ad Hoc](#Adhoc)
+* 10. [Kadane's Algorithm and Prefix Sum](#Kadane)
 
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
 ##  1. <a name='IntroductiontoCompetitiveCoding'></a>Introduction to Competitive Coding 
 
 Let us first talk about how one should approach a problem in Competitive Coding. There are broadly 4 steps -
@@ -417,9 +425,9 @@ The recursive call of your function must be such that at each successive recursi
 
 The base case of your function decides when your function ends, so your base case should be selected such that your recursive case can never overshoot your base case.
 
-##  5. <a name='Examples'></a>Examples
+###  4.1. <a name='Examples'></a> Examples
 So lets try out a couple of examples on how recursion works
-####  5.1. <a name='Example1:Fibonacciseries'></a>Example 1 : Fibonacci series
+####  4.1.1. <a name='Example1:Fibonacciseries'></a> Example 1: Fibonacci series
 
 The fibonacci series in mathamatics is represented by
 F(0) = 1
@@ -461,7 +469,7 @@ Here ``if(x == 0 || x == 1) `` is the base case and it returns when x = 0 or x =
 We can verify that the recursive call can never go below 1 or 0 as long as the initial input is valid because it is taken care of by the base case thus we never go past the base case.
 Also we see that with every call to the function x is getting smaller and thus closer to the base case of 0 or 1.
 
-####  5.2. <a name='Example2:Factorials'></a>Example 2 : Factorials
+####  4.1.2. <a name='Example2:Factorials'></a> Example 2: Factorials
 
 The factorial of a number n is equal to n\*(n-1)\*(n-2)...1
 ie,
