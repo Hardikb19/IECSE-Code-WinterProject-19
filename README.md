@@ -718,28 +718,28 @@ int lcm(int a,int b)
 
 Combinatorics is the branch of mathematics that deals with combinations of elements belonging to a finite set in accordance with some constraints.
 
-######## Principle of Addition
+###### Principle of Addition
 
 The principle of addition states if a one task can be one done in *m* ways and another task which is **mutually exclusive** of the first task can be done in *n* ways, then the the number of possible ways in which either can be done is *m+n*.
 
-######## Principle of Multiplication
+###### Principle of Multiplication
 
 The principle of multiplication states that if one task can be done in *m* ways and another task which is **independent** of the first task can be done in *n* ways, after the first task has been performed, then the number of possible ways in which both the tasks can be done is *m×n*.
 
-######## Combinations of Objects
+###### Combinations of Objects
 
 Number of ways in which you can select *n* objects taken *r* at a time. (Order does not matter.)
 
 <sup>*n*</sup>*C*<sub>*r*</sub> *= n! / r! (n - r)!*
 
-######## Permutations of Objects
+###### Permutations of Objects
 
 Number of ways you can order *n* objects taken *r* at a time. (Order matters.)
 
 <sup>*n*</sup>*P*<sub>*r*</sub> *= n! / (n - r)!*
 
 
-######## Stars and Bars
+###### Stars and Bars
 
 **Theorem one**
 
@@ -765,7 +765,7 @@ Here the 4 kids get 3, 0, 2 and 2 cookies respectively. So there are 10 symbols 
 
 This can be generalised as <sup>*(n+k-1)*</sup>*C*<sub>*(k-1)*</sub>.
 
-######## Properties of Combinations
+###### Properties of Combinations
 
 ![Combinations Properties](https://www.studypage.in/images/maths/algebra/combination-properties.jpg)
 
