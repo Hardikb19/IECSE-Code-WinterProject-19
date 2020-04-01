@@ -537,7 +537,7 @@ Line 1 and Line 4 are single statements and hence execute in one unit of time ea
 
 Line 2 has a for loop which executes two statements, a check statement and an increment statement. The check statement runs exactly n+1 times (It stops once the condition is false). The increment statement runs for exactly n times. This line contributes 2n + 1 to the total runtime.
 
-Line 3 has two operations, addition an assignment. Each of these operations takes 1 unit time each. Since the loop runs n times, this line contributes 2n to the total runtime.
+Line 3 has two operations, addition and assignment. Each of these operations takes 1 unit time each. Since the loop runs n times, this line contributes 2n to the total runtime.
 
 So, the total runtime can be written as a function of the input size n. The function would be
 
