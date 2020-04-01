@@ -399,7 +399,7 @@ int add(int a,int b)
 }						//which also applies for that secondary call and further ahead.
 ```
 
-Recursion is a technique by which a function repeatedly calls itself (Or a different function) to have a effect similar to a loop.
+Recursion is a technique by which a function repeatedly calls itself (Or a different function) to have an effect similar to a loop.
 
 A Recursive function in it's most basic form consists of two parts.
 * Base case
