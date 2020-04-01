@@ -813,7 +813,7 @@ A | B = (101)<sub>2</sub> | (011)<sub>2</sub> = (111)<sub>2</sub> = 7
 A = 5 = (101)<sub>2</sub><br> B = 3 = (011)<sub>2</sub><br><br>
 A ^ B = (101)<sub>2</sub> ^ (011)<sub>2</sub> = (110)<sub>2</sub> = 6
 
-**Left Shift ( << )**: Left shift operator is a binary operator which shift some number of bits, in the given bit pattern, to the left and append 0 at the end. Left shift is equivalent to multiplying the bit pattern with  ( if we are shifting k bits ).
+**Left Shift ( << )**: Left shift operator is a binary operator which shift some number of bits, in the given bit pattern, to the left and append 0 at the end. Left shift is equivalent to multiplying the bit pattern with 2^k ( if we are shifting k bits ).
 
 1 << 1 = 2 = 2<sup>1</sup><br>
 1 << 2 = 4 = 2<sup>2</sup><br>
@@ -822,7 +822,7 @@ A ^ B = (101)<sub>2</sub> ^ (011)<sub>2</sub> = (110)<sub>2</sub> = 6
 …<br>
 1 << n = 2<sup>n</sup><br>
 
-**Right Shift ( >> )**: Right shift operator is a binary operator which shift the some number of bits, in the given bit pattern, to the right and append 1 at the end. Right shift is equivalent to dividing the bit pattern with 2k ( if we are shifting k bits ).
+**Right Shift ( >> )**: Right shift operator is a binary operator which shift the some number of bits, in the given bit pattern, to the right and append 1 at the end. Right shift is equivalent to dividing the bit pattern with 2^k ( if we are shifting k bits ).
 
 4 >> 1 = 2<br>
 6 >> 1 = 3<br>
@@ -835,7 +835,7 @@ A ^ B = (101)<sub>2</sub> ^ (011)<sub>2</sub> = (110)<sub>2</sub> = 6
 
 ###### **How to check if a given number is a power of 2 ?**
 
-Consider a number N and you need to find if N is a power of 2. A simple solution to this problem is to repeated divide N by 2 if N is even. If we end up with a 1 then N is a power of 2, otherwise not. There is a special case also. If N = 0 then it is not a power of 2.
+Consider a number N and you need to find if N is a power of 2. A simple solution to this problem is to repeatedly divide N by 2 if N is even. If we end up with a 1 then N is a power of 2, otherwise not. There is a special case also. If N = 0 then it is not a power of 2.
 ```cpp
  bool isPowerOfTwo(int x)
     {
