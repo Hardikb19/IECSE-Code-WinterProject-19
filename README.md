@@ -1128,7 +1128,7 @@ We can still make this faster. Notice that both the above implementations still 
 
 We can prove by contradiction that one of them will be lesser than sqrt(n). If 
 
-![](http://latex2png.com/output//latex_0739b813dad718abc9cdac0fed26c883.png)
+![proof](http://latex2png.com/output//latex_0739b813dad718abc9cdac0fed26c883.png)
 
 This contradicts our assumption that a*b = n. Hence one of them has to be less than sqrt(n). Using this theorem, we can reduce the loop even further to check until sqrt(n) for any possible divisors. The implementation would be,
 
