@@ -378,8 +378,8 @@ import static java.lang.Math.*;
 
 ####  3.3. <a name='FurtherReading'></a>Further Reading
 A great place to get started would be geeksforgeeks, links for which are provided below.
-* https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
-* https://www.geeksforgeeks.org/java-util-package-java/
+* [STL](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)
+* [java.util]https://www.geeksforgeeks.org/java-util-package-java/
 * [Strings in C++](https://www.geeksforgeeks.org/strings-library-in-cpp-stl/) , [Strings in Java](https://www.geeksforgeeks.org/string-class-in-java/)
 
 
