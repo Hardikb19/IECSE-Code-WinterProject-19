@@ -215,6 +215,7 @@ int main()
   vector<int> v1(10); // this is a declaration for a vector of integers that has size 10. Note that unlike an array declaration, we use ()
                       // instead of []
   for(int i=0 ; i < 10 ; i++)
+  {
     v1[i] = i;
   }
 
@@ -229,8 +230,8 @@ int main()
   int len = v2.size(); // v.size() returns the size of the vector
   cout<<"Initial size of v2 is "<<len<<endl; // Output is 0, because we have not specified the size of the vector yet.
 
+  for(int i=0 ; i < 15 ; i++)
   {
-    for(int i=0 ; i < 15 ; i++)
     v2.push_back(i); // Since v[i] is not a valid index yet, we use the push_back() function to insert an element into the vector
   }
 
@@ -239,8 +240,8 @@ int main()
   int len1 = v1.size() , len2 = v2.size();
   cout<<"Sizes of the two vectors are "<<len1<<" and "<<len2<<endl;
 
+  return 0;
 }
-return 0;
 ```
 
 You can use the empty() function to check if a vector is empty.
@@ -439,18 +440,18 @@ import static java.lang.Math.*;
 
 ####  3.3. <a name='FurtherReading'></a>Further Reading
 A great place to get started would be geeksforgeeks, links for which are provided below.
-* https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
-* https://www.geeksforgeeks.org/java-util-package-java/
+* [STL](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)
+* [java.util]https://www.geeksforgeeks.org/java-util-package-java/
 * [Strings in C++](https://www.geeksforgeeks.org/strings-library-in-cpp-stl/) , [Strings in Java](https://www.geeksforgeeks.org/string-class-in-java/)
 
 
 ##  4. <a name='Recursion'></a>Recursion
 
-Imagine you have to build a robot which can perform a certain task, like add A to B, now you are told to use a unit from an infinite supply of units which can only add and subtract 1 to/from a number provided to it, and also perform logical operations. How will you build a system which adds A to B perfectly.
+Imagine you have to build a robot which can perform a certain task, like add A to B. Now you are told to use a unit from an infinite supply of units which can only add and subtract 1 to/from a number provided to it, and also perform logical operations. How will you build a system which adds A to B perfectly.
 
-You'll give both number to the robot, which will pass them to a secondary robot which adds 1 to A and subtract 1 from B and keep passing along until B is 0, and then the final value is returned. Here we don't violate the rules and still get an answer.
+You'll give both numbers to the robot, which will pass them to a secondary robot which adds 1 to A and subtracts 1 from B and keep passing along until B is 0, and then the final value is returned. Here we don't violate the rules and still get an answer.
 
-With recursion you can breakdown a complex problem into a simpler unit which can be solved by calling the same function again and again till a certain stop condition is reached
+With recursion you can breakdown a complex problem into a simpler unit which can be solved by calling the same function again and again till a certain stop condition is reached.
 
 ```cpp
 int add(int a,int b)
@@ -461,7 +462,7 @@ int add(int a,int b)
 }						//which also applies for that secondary call and further ahead.
 ```
 
-Recursion is a technique by which a function repeatedly calls itself (Or a different function) to have a effect similar to a loop.
+Recursion is a technique by which a function repeatedly calls itself (Or a different function) to have an effect similar to a loop.
 
 A Recursive function in it's most basic form consists of two parts.
 * Base case
@@ -481,21 +482,21 @@ This goes on until it reaches the base case.
 
 ######  7.3. <a name='Choosingbasecaseandrecursivecall'></a>Choosing base case and recursive call
 
-The choice of the base case and recursive call for your function is really important as these decide how your function works
+The choice of the base case and recursive call for your function is really important as these decide how your function works.
 
-The recursive call of your function must be such that at each successive recursive call the function reaches closer to your base case, ie after multiple calls to your function, you should eventually reach your base case
+The recursive call of your function must be such that at each successive recursive call the function reaches closer to your base case, i.e after multiple calls to your function, you should eventually reach your base case.
 
 The base case of your function decides when your function ends, so your base case should be selected such that your recursive case can never overshoot your base case.
 
 ###  4.1. <a name='Examples'></a> Examples
-So lets try out a couple of examples on how recursion works
+So lets try out a couple of examples on how recursion works.
 ####  4.1.1. <a name='Example1:Fibonacciseries'></a> Example 1: Fibonacci series
 
-The fibonacci series in mathamatics is represented by
+The fibonacci series in mathematics is represented by
 F(0) = 1
 F(1) = 1
-F(x) = F(x-1) + F(x-2)
-This problem gives us the perfect example of where to use recursion
+F(x) = F(x-1) + F(x-2).
+This problem gives us the perfect example of where to use recursion.
 
 This code in c++ would be
 ```c++
@@ -575,7 +576,7 @@ Here too we see that x can never go below 1 as long as the initial input is abov
 
 #### Introduction
 
-Thinking of an efficient algorithm to solve a problem is one of the hardest tasks in competitive programming. Assessing your algorithm's efficiency is of upmost importance. This is where Time complexities are useful. They help us decide whether certain algorithms can solve the problem within the required time and space constraints. Time Complexity is one of the most important metrics of comparison for Algorithms.
+Thinking of an efficient algorithm to solve a problem is one of the hardest tasks in competitive programming. Assessing your algorithm's efficiency is of utmost importance. This is where Time Complexities are useful. They help us decide whether certain algorithms can solve the problem within the required time and space constraints. Time Complexity is one of the most important metrics of comparison for Algorithms.
 
 For example consider two different sorting algorithms, bubble and quick sort. [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/) has a time complexity of O(N<sup>2</sup>) whereas [Quick Sort](https://www.geeksforgeeks.org/quick-sort/) has a complexity of O(NlogN). Thus, we conclude that quick sort is more efficient than bubble sort. We will get into Big O notation later in this tutorial.
 
@@ -598,7 +599,7 @@ Line 1 and Line 4 are single statements and hence execute in one unit of time ea
 
 Line 2 has a for loop which executes two statements, a check statement and an increment statement. The check statement runs exactly n+1 times (It stops once the condition is false). The increment statement runs for exactly n times. This line contributes 2n + 1 to the total runtime.
 
-Line 3 has two operations, addition an assignment. Each of these operations takes 1 unit time each. Since the loop runs n times, this line contributes 2n to the total runtime.
+Line 3 has two operations, addition and assignment. Each of these operations takes 1 unit time each. Since the loop runs n times, this line contributes 2n to the total runtime.
 
 So, the total runtime can be written as a function of the input size n. The function would be
 
@@ -779,28 +780,28 @@ int lcm(int a,int b)
 
 Combinatorics is the branch of mathematics that deals with combinations of elements belonging to a finite set in accordance with some constraints.
 
-######## Principle of Addition
+###### Principle of Addition
 
-The principle of addition states if a one task can be one done in *m* ways and another task which is **mutually exclusive** of the first task can be done in *n* ways, then the the number of possible ways in which either can be done is *m+n*.
+The principle of addition states if one task can be done in *m* ways and another task which is **mutually exclusive** of the first task can be done in *n* ways, then the the number of possible ways in which either can be done is *m+n*.
 
-######## Principle of Multiplication
+###### Principle of Multiplication
 
 The principle of multiplication states that if one task can be done in *m* ways and another task which is **independent** of the first task can be done in *n* ways, after the first task has been performed, then the number of possible ways in which both the tasks can be done is *m×n*.
 
-######## Combinations of Objects
+###### Combinations of Objects
 
 Number of ways in which you can select *n* objects taken *r* at a time. (Order does not matter.)
 
 <sup>*n*</sup>*C*<sub>*r*</sub> *= n! / r! (n - r)!*
 
-######## Permutations of Objects
+###### Permutations of Objects
 
 Number of ways you can order *n* objects taken *r* at a time. (Order matters.)
 
 <sup>*n*</sup>*P*<sub>*r*</sub> *= n! / (n - r)!*
 
 
-######## Stars and Bars
+###### Stars and Bars
 
 **Theorem one**
 
@@ -810,7 +811,7 @@ Let us say that we need to distribute 7 cookies to 4 kids such that they all hav
 
 					* * * | * | * | * *
 
-Here the 4 kids get 3, 1, 1 and 2 cookies respectively. we can say that we can place *(k-1)* bars between *(n-1)* spaces between the stars. Thus, the answer is <sup>6</sup>*C*<sub>3</sub>.
+Here the 4 kids get 3, 1, 1 and 2 cookies respectively. We can say that we can place *(k-1)* bars between *(n-1)* spaces between the stars. Thus, the answer is <sup>6</sup>*C*<sub>3</sub>.
 
 This can be generalised as <sup>*(n-1)*</sup>*C*<sub>*(k-1)*</sub>.
 
@@ -826,7 +827,7 @@ Here the 4 kids get 3, 0, 2 and 2 cookies respectively. So there are 10 symbols 
 
 This can be generalised as <sup>*(n+k-1)*</sup>*C*<sub>*(k-1)*</sub>.
 
-######## Properties of Combinations
+###### Properties of Combinations
 
 ![Combinations Properties](https://www.studypage.in/images/maths/algebra/combination-properties.jpg)
 
@@ -874,7 +875,7 @@ A | B = (101)<sub>2</sub> | (011)<sub>2</sub> = (111)<sub>2</sub> = 7
 A = 5 = (101)<sub>2</sub><br> B = 3 = (011)<sub>2</sub><br><br>
 A ^ B = (101)<sub>2</sub> ^ (011)<sub>2</sub> = (110)<sub>2</sub> = 6
 
-**Left Shift ( << )**: Left shift operator is a binary operator which shift some number of bits, in the given bit pattern, to the left and append 0 at the end. Left shift is equivalent to multiplying the bit pattern with  ( if we are shifting k bits ).
+**Left Shift ( << )**: Left shift operator is a binary operator which shift some number of bits, in the given bit pattern, to the left and append 0 at the end. Left shift is equivalent to multiplying the bit pattern with 2^k ( if we are shifting k bits ).
 
 1 << 1 = 2 = 2<sup>1</sup><br>
 1 << 2 = 4 = 2<sup>2</sup><br>
@@ -883,7 +884,7 @@ A ^ B = (101)<sub>2</sub> ^ (011)<sub>2</sub> = (110)<sub>2</sub> = 6
 …<br>
 1 << n = 2<sup>n</sup><br>
 
-**Right Shift ( >> )**: Right shift operator is a binary operator which shift the some number of bits, in the given bit pattern, to the right and append 1 at the end. Right shift is equivalent to dividing the bit pattern with 2k ( if we are shifting k bits ).
+**Right Shift ( >> )**: Right shift operator is a binary operator which shift the some number of bits, in the given bit pattern, to the right and append 1 at the end. Right shift is equivalent to dividing the bit pattern with 2^k ( if we are shifting k bits ).
 
 4 >> 1 = 2<br>
 6 >> 1 = 3<br>
@@ -896,7 +897,7 @@ A ^ B = (101)<sub>2</sub> ^ (011)<sub>2</sub> = (110)<sub>2</sub> = 6
 
 ###### **How to check if a given number is a power of 2 ?**
 
-Consider a number N and you need to find if N is a power of 2. A simple solution to this problem is to repeated divide N by 2 if N is even. If we end up with a 1 then N is a power of 2, otherwise not. There is a special case also. If N = 0 then it is not a power of 2.
+Consider a number N and you need to find if N is a power of 2. A simple solution to this problem is to repeatedly divide N by 2 if N is even. If we end up with a 1 then N is a power of 2, otherwise not. There is a special case also. If N = 0 then it is not a power of 2.
 ```cpp
  bool isPowerOfTwo(int x)
     {
@@ -942,7 +943,7 @@ Properties for numbers which are powers of 2, is that they have one and only one
 
 ###### **Count the number of ones in the binary representation of the given number**
 
-The basic approach to evaluate the binary form of a number is to traverse on it and count the number of ones. But this approach takes log2N of time in every case.
+The basic approach to evaluate the binary form of a number is to traverse on it and count the number of ones. But this approach takes log<sub>2</sub>N of time in every case.
 
 Why log<sub>2</sub>N ?
 As to get a number in its binary form, we have to divide it by 2, until it gets 0, which will take log<sub>2</sub>N of time.
@@ -959,7 +960,7 @@ With bitwise operations, we can use an algorithm whose running time depends on t
             return count;
     }
 ```
-Why this algorithm works ?
+Why does this algorithm work ?
 As explained in the previous algorithm, the relationship between the bits of x and x-1. So as in x-1, the rightmost 1 and bits right to it are flipped, then by performing x&(x-1), and storing it in x, will reduce x to a number containing number of ones(in its binary form) less than the previous state of x, thus increasing the value of count in each iteration.
 
 Example:
@@ -1088,7 +1089,7 @@ This is one of the most important concepts that you'll encounter in the world of
 For example, 2,3 and 5 are some prime numbers. 
 We'll now look into ways to determine whether a number is prime or not. 
 
-One of the most naive algorithms to find out if a number n is prime of not would be to run a loop from 2 to n-1, checking if any number divides the number. If any number does divide n, it's a composite number. Else it's a prime. A simple implementation in C++ would be,
+One of the most naive algorithms to find out if a number n is prime or not would be to run a loop from 2 to n-1, checking if any number divides the number. If any number does divide n, it's a composite number. Else it's a prime. A simple implementation in C++ would be,
 
 ```cpp
 bool isPrime(int x)
