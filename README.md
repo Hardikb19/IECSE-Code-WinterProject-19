@@ -427,13 +427,13 @@ The recursive call of your function must be such that at each successive recursi
 The base case of your function decides when your function ends, so your base case should be selected such that your recursive case can never overshoot your base case.
 
 ###  4.1. <a name='Examples'></a> Examples
-So lets try out a couple of examples on how recursion works
+So lets try out a couple of examples on how recursion works.
 ####  4.1.1. <a name='Example1:Fibonacciseries'></a> Example 1: Fibonacci series
 
 The fibonacci series in mathematics is represented by
 F(0) = 1
 F(1) = 1
-F(x) = F(x-1) + F(x-2)
+F(x) = F(x-1) + F(x-2).
 This problem gives us the perfect example of where to use recursion.
 
 This code in c++ would be
@@ -514,7 +514,7 @@ Here too we see that x can never go below 1 as long as the initial input is abov
 
 #### Introduction
 
-Thinking of an efficient algorithm to solve a problem is one of the hardest tasks in competitive programming. Assessing your algorithm's efficiency is of upmost importance. This is where Time complexities are useful. They help us decide whether certain algorithms can solve the problem within the required time and space constraints. Time Complexity is one of the most important metrics of comparison for Algorithms.
+Thinking of an efficient algorithm to solve a problem is one of the hardest tasks in competitive programming. Assessing your algorithm's efficiency is of utmost importance. This is where Time Complexities are useful. They help us decide whether certain algorithms can solve the problem within the required time and space constraints. Time Complexity is one of the most important metrics of comparison for Algorithms.
 
 For example consider two different sorting algorithms, bubble and quick sort. [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/) has a time complexity of O(N<sup>2</sup>) whereas [Quick Sort](https://www.geeksforgeeks.org/quick-sort/) has a complexity of O(NlogN). Thus, we conclude that quick sort is more efficient than bubble sort. We will get into Big O notation later in this tutorial.
 
