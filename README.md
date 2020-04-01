@@ -76,7 +76,7 @@ If you have ever tried coding in C, you are probably used to declaring a string 
 The following code snippet shows how to declaring and use a string :
 
 ```cpp
-##include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
