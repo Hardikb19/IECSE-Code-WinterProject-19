@@ -749,7 +749,7 @@ Let us say that we need to distribute 7 cookies to 4 kids such that they all hav
 
 					* * * | * | * | * *
 
-Here the 4 kids get 3, 1, 1 and 2 cookies respectively. we can say that we can place *(k-1)* bars between *(n-1)* spaces between the stars. Thus, the answer is <sup>6</sup>*C*<sub>3</sub>.
+Here the 4 kids get 3, 1, 1 and 2 cookies respectively. We can say that we can place *(k-1)* bars between *(n-1)* spaces between the stars. Thus, the answer is <sup>6</sup>*C*<sub>3</sub>.
 
 This can be generalised as <sup>*(n-1)*</sup>*C*<sub>*(k-1)*</sub>.
 
