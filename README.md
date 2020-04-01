@@ -52,7 +52,7 @@ Start attempting contests. Codechef long contests are really good for beginners.
 Also check [this](https://www.codechef.com/certification/data-structures-and-algorithms/prepare) out!
 
 ##  2. <a name='STLinCandCollectionsinJava'></a>STL in C++ and Collections in Java
-When you are taking part in a competition, creating functions/methods for certain tasks, like extracting substrings, sorting, adding and removing elements array, requires time to code and hence you lose out on valuable time. A good understanding of the library functions is important for writing quick and bug-free code. Most programming languages provide with predefined libraries which help you do the same. Here are a few you'll need to know to get started with competitive coding.
+When you are taking part in a competition, creating functions/methods for certain tasks, like extracting substrings, sorting, adding and removing elements to/from an array, requires time to code and hence you lose out on valuable time. A good understanding of the library functions is important for writing quick and bug-free code. Most programming languages provide with predefined libraries which help you do the same. Here are a few you'll need to know to get started with competitive coding.
 
 >It is always suggested you understand how these are implemented without using STL, because if you ever face a problem where time is a constraint or requires a specific form of updation which STL do not have, you will have to code a program for it.
 
