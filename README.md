@@ -574,7 +574,7 @@ Here too we see that x can never go below 1 as long as the initial input is abov
 
 ## 5. <a name='Time'></a>Time Complexities
 
-#### Introduction
+### 5.1 <a name='Timeintro'></a>Introduction
 
 Thinking of an efficient algorithm to solve a problem is one of the hardest tasks in competitive programming. Assessing your algorithm's efficiency is of utmost importance. This is where Time Complexities are useful. They help us decide whether certain algorithms can solve the problem within the required time and space constraints. Time Complexity is one of the most important metrics of comparison for Algorithms.
 
@@ -636,7 +636,7 @@ The first for loop is executed n times. For each time the first for loop is exec
 
 Thus the total runtime can be written as a function of the array size squared, i.e. n<sup>2</sup>.
 
-### 5.1 <a name='Timebig'></a>Big O notation
+### 5.2 <a name='Timebig'></a>Big O notation
 
 Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required by an algorithm.
 
@@ -693,12 +693,12 @@ int binsearch(int arr[],int low,int high)
 
 The logarithm is base 2, i.e, log<sub>2</sub>N
 
-### 5.2 <a name='Timefurther'></a>Further Reading
+### 5.3 <a name='Timefurther'></a>Further Reading
 1. Chapter 1,3 of Introduction to Algorithms, Second Edition, by Thomas Cormen, Charles Leiserson, Ronald Rivest, Clifford Stein.
-2. https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/
-3. https://www.cs.cmu.edu/~adamchik/15-121/lectures/Algorithmic%20Complexity/complexity.html
-4. https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/
-5. http://bigocheatsheet.com/ - contains complexities of standard sorting algorithms and standard data structures
+2. [Computational Complexity](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/)
+3. [Algorithmic Complexity](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Algorithmic%20Complexity/complexity.html)
+4. [Complexity Analysis](https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/)
+5. [Big O Cheat Sheet](http://bigocheatsheet.com/) - contains complexities of standard sorting algorithms and standard data structures
 
 ## 6. <a name='Fastio'></a>Fast IO for Competitive Programming
 
@@ -1123,7 +1123,7 @@ bool isPrime(int x)
 ```
 
 
-We can still make this faster. Notice that both the above implementations still visits all the possible proper factors. But to test a number's primality, we don't need to check for all possible factors. Consider two proper factors a and b of a number n, such that,
+We can still make this faster. Notice that both the above implementations still visit all the possible proper factors. But to test whether a number's primality, we don't need to check for all possible factors. Consider two proper factors a and b of a number n, such that,
 > a*b = n
 
 We can prove by contradiction that one of them will be lesser than sqrt(n). If 
