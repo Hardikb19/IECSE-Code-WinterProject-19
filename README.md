@@ -111,7 +111,7 @@ Concatenating strings is also easier with the string class. You can concatenate 
 
 For comparing if two strings are equal , you can either use the relational operators('<' , '>' , '==' , "!="). Another way is using the compare function.
 ```cpp
-##include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -208,7 +208,7 @@ You don't need to know the size of a vector when declaring it. You can also get 
 
 
 ```cpp
-##include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -250,7 +250,7 @@ The resize function can be sued to resize a vector one it is filled upto its cur
 The clear function clears the vector.
 
 ```cpp
-##include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
