@@ -61,7 +61,7 @@ When you are taking part in a competition, creating functions/methods for certai
 
 Imports for C++ STL
 ```cpp
-##include<bits/stdc++.h>
+#include<bits/stdc++.h>
 ```
 Imports for Java Utility Package
 ```Java
