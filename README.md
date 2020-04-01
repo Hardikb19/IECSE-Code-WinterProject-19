@@ -720,7 +720,7 @@ Combinatorics is the branch of mathematics that deals with combinations of eleme
 
 ###### Principle of Addition
 
-The principle of addition states if a one task can be one done in *m* ways and another task which is **mutually exclusive** of the first task can be done in *n* ways, then the the number of possible ways in which either can be done is *m+n*.
+The principle of addition states if one task can be done in *m* ways and another task which is **mutually exclusive** of the first task can be done in *n* ways, then the the number of possible ways in which either can be done is *m+n*.
 
 ###### Principle of Multiplication
 
