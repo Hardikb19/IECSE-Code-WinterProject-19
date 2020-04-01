@@ -384,11 +384,11 @@ A great place to get started would be geeksforgeeks, links for which are provide
 
 ##  4. <a name='Recursion'></a>Recursion
 
-Imagine you have to build a robot which can perform a certain task, like add A to B, now you are told to use a unit from an infinite supply of units which can only add and subtract 1 to/from a number provided to it, and also perform logical operations. How will you build a system which adds A to B perfectly.
+Imagine you have to build a robot which can perform a certain task, like add A to B. Now you are told to use a unit from an infinite supply of units which can only add and subtract 1 to/from a number provided to it, and also perform logical operations. How will you build a system which adds A to B perfectly.
 
-You'll give both number to the robot, which will pass them to a secondary robot which adds 1 to A and subtract 1 from B and keep passing along until B is 0, and then the final value is returned. Here we don't violate the rules and still get an answer.
+You'll give both numbers to the robot, which will pass them to a secondary robot which adds 1 to A and subtracts 1 from B and keep passing along until B is 0, and then the final value is returned. Here we don't violate the rules and still get an answer.
 
-With recursion you can breakdown a complex problem into a simpler unit which can be solved by calling the same function again and again till a certain stop condition is reached
+With recursion you can breakdown a complex problem into a simpler unit which can be solved by calling the same function again and again till a certain stop condition is reached.
 
 ```cpp
 int add(int a,int b)
@@ -419,9 +419,9 @@ This goes on until it reaches the base case.
 
 ######  7.3. <a name='Choosingbasecaseandrecursivecall'></a>Choosing base case and recursive call
 
-The choice of the base case and recursive call for your function is really important as these decide how your function works
+The choice of the base case and recursive call for your function is really important as these decide how your function works.
 
-The recursive call of your function must be such that at each successive recursive call the function reaches closer to your base case, ie after multiple calls to your function, you should eventually reach your base case
+The recursive call of your function must be such that at each successive recursive call the function reaches closer to your base case, i.e after multiple calls to your function, you should eventually reach your base case.
 
 The base case of your function decides when your function ends, so your base case should be selected such that your recursive case can never overshoot your base case.
 
@@ -429,11 +429,11 @@ The base case of your function decides when your function ends, so your base cas
 So lets try out a couple of examples on how recursion works
 ####  4.1.1. <a name='Example1:Fibonacciseries'></a> Example 1: Fibonacci series
 
-The fibonacci series in mathamatics is represented by
+The fibonacci series in mathematics is represented by
 F(0) = 1
 F(1) = 1
 F(x) = F(x-1) + F(x-2)
-This problem gives us the perfect example of where to use recursion
+This problem gives us the perfect example of where to use recursion.
 
 This code in c++ would be
 ```c++
