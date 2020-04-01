@@ -881,7 +881,7 @@ Properties for numbers which are powers of 2, is that they have one and only one
 
 ###### **Count the number of ones in the binary representation of the given number**
 
-The basic approach to evaluate the binary form of a number is to traverse on it and count the number of ones. But this approach takes log2N of time in every case.
+The basic approach to evaluate the binary form of a number is to traverse on it and count the number of ones. But this approach takes log<sub>2</sub>N of time in every case.
 
 Why log<sub>2</sub>N ?
 As to get a number in its binary form, we have to divide it by 2, until it gets 0, which will take log<sub>2</sub>N of time.
@@ -898,7 +898,7 @@ With bitwise operations, we can use an algorithm whose running time depends on t
             return count;
     }
 ```
-Why this algorithm works ?
+Why does this algorithm work ?
 As explained in the previous algorithm, the relationship between the bits of x and x-1. So as in x-1, the rightmost 1 and bits right to it are flipped, then by performing x&(x-1), and storing it in x, will reduce x to a number containing number of ones(in its binary form) less than the previous state of x, thus increasing the value of count in each iteration.
 
 Example:
