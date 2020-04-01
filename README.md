@@ -1123,7 +1123,7 @@ bool isPrime(int x)
 ```
 
 
-We can still make this faster. Notice that both the above implementations still visit all the possible proper factors. But to test whether a number's primality, we don't need to check for all possible factors. Consider two proper factors a and b of a number n, such that,
+We can still make this faster. Notice that both the above implementations still visits all the possible proper factors. But to test a number's primality, we don't need to check for all possible factors. Consider two proper factors a and b of a number n, such that,
 > a*b = n
 
 We can prove by contradiction that one of them will be lesser than sqrt(n). If 
