@@ -1027,7 +1027,7 @@ This is one of the most important concepts that you'll encounter in the world of
 For example, 2,3 and 5 are some prime numbers. 
 We'll now look into ways to determine whether a number is prime or not. 
 
-One of the most naive algorithms to find out if a number n is prime of not would be to run a loop from 2 to n-1, checking if any number divides the number. If any number does divide n, it's a composite number. Else it's a prime. A simple implementation in C++ would be,
+One of the most naive algorithms to find out if a number n is prime or not would be to run a loop from 2 to n-1, checking if any number divides the number. If any number does divide n, it's a composite number. Else it's a prime. A simple implementation in C++ would be,
 
 ```cpp
 bool isPrime(int x)
