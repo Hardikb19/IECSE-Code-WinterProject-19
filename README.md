@@ -333,8 +333,25 @@ C++ provides the sort(pointer_to_first_ele , pointer_to_last_ele) function to so
   vector<int> v(10);
 
   for(int i=10 ; i > -1 ; i--) v[i] = i;
-  sort(v.begin() , v.end()) // Here also, we pass the pointer to the first and last element in the vector.
+  sort(v.begin() , v.end()); // Here also, we pass the pointer to the first and last element in the vector.
                            // v.begin() returns the pointer to the first element and v.end() returns the pointer to the last element
+    
+    struct Interval 
+    { 
+        int first, second; 
+    }; 
+
+    bool compare(Interval i1, Interval i2) 
+    {    
+        return (i1.first < i2.first); 
+    }
+    Interval arr[] =  { {6,8}, {1,9}, {2,4}, {4,7} };  
+    int n = 4;
+    sort(arr, arr+n, compare);  // sorts the second element in arr with redpect to the
+                                        // first element in the array by passing an instance of the
+                                        // compare function to sort(). Note that return type of compare() has to be of type
+                                        // boolean for the sorting to occur in increasing order of first element.
+
 ```
 Java equivalent is using Arrays.sort() and Collections.sort()
 ```Java
@@ -353,6 +370,51 @@ Java equivalent is using Arrays.sort() and Collections.sort()
 
    for(int i=0;i<5;i++)
        System.out.println(v.get(i));
+
+       
+       
+       
+       //Sorting with respect to an attribute of a class
+
+       class Student  // a class to represent a student
+    { 
+        int rollno; 
+        String name, address; 
+  
+        // Constructor 
+        public Student(int rollno, String name, 
+                               String address) 
+        { 
+            this.rollno = rollno; 
+            this.name = name; 
+            this.address = address; 
+        } 
+  
+    } 
+  
+
+        class Sortbyroll implements Comparator<Student> 
+        { 
+            // Used for sorting in ascending order of 
+            // roll number 
+            public int compare(Student a, Student b) 
+            { 
+                return a.rollno - b.rollno; 
+            } 
+        } 
+  
+
+        Student [] arr = {new Student(111, "bbbb", "london"), 
+                          new Student(131, "aaaa", "nyc"), 
+                          new Student(121, "cccc", "jaipur")}; 
+  
+        System.out.println("Unsorted"); 
+        for (int i=0; i<arr.length; i++) 
+            System.out.println(arr[i]); 
+  
+        Arrays.sort(arr, new Sortbyroll()); //Sorts in data in ascending order of roll no.
+ 
+ 
 ```
 
 ####  3.2. <a name='MinMax'></a>Min, Max
